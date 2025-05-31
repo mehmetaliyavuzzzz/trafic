@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Giriş / Kayıt</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="container">
+      <div class="tab-bar">
+        <button id="loginTab" class="tab active">Giriş Yap</button>
+        <button id="registerTab" class="tab">Kayıt Ol</button>
+      </div>
+      <div id="loginPanel" class="tab-panel">
+        <form id="loginForm">
+          <input type="email" id="loginEmail" placeholder="E-posta" required />
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Şifre"
+            required
+          />
+          <button type="submit">Giriş Yap</button>
+        </form>
+        <div id="loginMessage"></div>
+      </div>
+      <div id="registerPanel" class="tab-panel" style="display: none">
+        <form id="registerForm">
+          <input
+            type="email"
+            id="registerEmail"
+            placeholder="E-posta"
+            required
+          />
+          <input
+            type="password"
+            id="registerPassword"
+            placeholder="Şifre"
+            required
+          />
+          <button type="submit">Kayıt Ol</button>
+        </form>
+        <div id="registerMessage"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
